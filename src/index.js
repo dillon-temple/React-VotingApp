@@ -4,7 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const sections = [
+    <App framework="React"/>,
+    <App framework="Vue"/>,
+    <App framework="Angular"/>,
+    <App framework="Ember"/>
+];
+
+ReactDOM.render(sections, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
